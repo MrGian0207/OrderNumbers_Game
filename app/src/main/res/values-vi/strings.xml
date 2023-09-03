@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language">Ngôn Ngữ: </string>
+    <string name="time">Thời Gian: </string>
+    <string name="start">Bắt Đầu</string>
+    <string name="congratulations">Xin chúc mừng!</string>
+    <string name="you_are_in">Bạn ở vị trí</string>
+    <string name="records">Kỉ lục</string>
+    <string name="start_again">Chơi lại</string>
+    <string name="sorry_you_failed">Xin lỗi! Bạn thất bại!</string>
+</resources>

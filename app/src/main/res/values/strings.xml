@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">Number_Game</string>
+    <string name="language">Language:</string>
+    <string name="time">Time:</string>
+    <string name="start">Start</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="you_are_in">You are in</string>
+    <string name="records">Records</string>
+    <string name="start_again">Start Again</string>
+    <string name="sorry_you_failed">Sorry! You failed</string>
+</resources>
