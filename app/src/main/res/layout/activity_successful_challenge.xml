@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".SuccessfulChallenge">
 
+
     <TextView
         android:id="@+id/textCongratulations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="@string/congratulations"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,9 +30,10 @@
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCongratulations" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textCongratulations"
+        app:layout_constraintVertical_bias="0.437" />
 
     <TextView
         android:id="@+id/textRecords"
@@ -72,13 +73,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--    <ListView-->
-<!--        android:id="@+id/timeRecords"-->
-<!--        android:layout_width="139dp"-->
-<!--        android:layout_height="164dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.573" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="309dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <TextView
+        android:id="@+id/Ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="476dp"
+        android:text="Text"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toEndOf="@+id/textRanking"
+        app:layout_constraintTop_toBottomOf="@+id/textCongratulations"
+        app:layout_constraintVertical_bias="0.437" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

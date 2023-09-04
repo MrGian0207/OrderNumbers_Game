@@ -14,9 +14,12 @@ public class TimeRecords implements Serializable {
     }
 
     public int getMinutes(){
-        return minutes;
+        return this.minutes;
     }
     public int getSeconds(){
-        return seconds;
+        return this.seconds;
     }
+
+
+
 }

@@ -26,6 +26,9 @@ import android.widget.Toast;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
@@ -42,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
     private long timeInMilliseconds = 0L;
     private boolean isRunning = false;
     GridView gridView;
-    String [] number = new String[16];
+    RandomNumberGenerator Random_Number = new RandomNumberGenerator();
+    String [] number = new String[Random_Number.numberOfRandomNumbers];
 
     Random r = new Random();
     int index = 0;
@@ -66,6 +70,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = getIntent();
+        if (intent.hasExtra("Record_List_Success")) {
+            Records_List = (ArrayList<TimeRecords>) intent.getSerializableExtra("Record_List_Success");
+            // Sử dụng Records_List để cập nhật giao diện người dùng hoặc thực hiện các thay đổi khác
+        }
+
         list_languages.add(new Languages(" "));
         list_languages.add(new Languages("EN"));
         list_languages.add(new Languages("VI"));

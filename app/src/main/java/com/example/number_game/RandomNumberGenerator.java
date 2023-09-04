@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class RandomNumberGenerator {
 
-        int numberOfRandomNumbers = 16;
+        int numberOfRandomNumbers = 100;
         int maxRange = 100; // Giới hạn trên cho số ngẫu nhiên
         List<Integer> randomNumbers = generateUniqueRandomNumbers(numberOfRandomNumbers, maxRange);
 
@@ -24,7 +24,6 @@ public class RandomNumberGenerator {
                 randomNumbers.add(randomNumber);
             }
         }
-
         return randomNumbers;
     }
 }
